@@ -3,7 +3,7 @@ session_start();
 include'dbconnection.php';
 // checking session is valid for not 
 if (strlen($_SESSION['id']==0)) {
-  header('location:logout.php');
+  header('location:login.php');
   } else{
 
 // for deleting user
@@ -39,7 +39,7 @@ echo "<script>alert('Data deleted');</script>";
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
-            <a href="#" class="logo"><b>Admin Dashboard</b></a>
+            <a href="index.php" class="logo"><b>Dashboard</b></a>
             <div class="nav notify-row" id="top_menu">
                
                          
@@ -48,7 +48,7 @@ echo "<script>alert('Data deleted');</script>";
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="logout.php">Logout</a></li>
+                    <li><a class="logout" href="logout.php" onclick='return confirm('Are you sure you want to logout?')'>Logout</a></li>
             	</ul>
             </div>
         </header>
@@ -61,7 +61,7 @@ echo "<script>alert('Data deleted');</script>";
               	  	
                   <li class="mt">
                       <a href="change-password.php">
-                          <i class="fa fa-file"></i>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                           <span>Change Password</span>
                       </a>
                   </li>
@@ -75,28 +75,28 @@ echo "<script>alert('Data deleted');</script>";
                   </li>
                   <li class="sub-menu">
                       <a href="schedule.php" >
-                          <i class="fa fa-users"></i>
+                          <i class="fa fa-calendar" aria-hidden="true"></i>
                           <span>Schedules</span>
                       </a>
                    
                   </li>
                   <li class="sub-menu">
-                      <a href="collection.php.php" >
-                          <i class="fa fa-users"></i>
+                      <a href="collections.php" >
+                          <i class="fa fa-trash-o" aria-hidden="true"></i>
                           <span>Collections</span>
                       </a>
                    
                   </li>
                   <li class="sub-menu">
                       <a href="location.php" >
-                          <i class="fa fa-users"></i>
+                          <i class="fa fa-location-arrow" aria-hidden="true"></i>
                           <span>Locations</span>
                       </a>
                    
                   </li>
                   <li class="sub-menu">
-                      <a href="subsription.php" >
-                          <i class="fa fa-users"></i>
+                      <a href="subscriptions.php" >
+                          <i class="fa fa-money" aria-hidden="true"></i>
                           <span>subscription</span>
                       </a>
                    
@@ -108,74 +108,13 @@ echo "<script>alert('Data deleted');</script>";
           </div>
       </aside>
       <section id="main-content">
-          <section class="wrapper">
-          	<h3><i class="fa fa-angle-right"></i> Manage Users</h3>
+         
 				<div class="row">
 				
                   
 	                  
                   <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-      <h5 class="mb-2">Info Box</h5>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Users</span>
-                <span class="info-box-number users_count"></span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Locations</span>
-                <span class="info-box-number locations_count"></span>
-              </div>
-              <!-- /.info-box-content -->
-            </div> 
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Schedules</span>
-                <span class="info-box-number schedules_count"></span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Transporters</span>
-                <span class="info-box-number transporters_count"></span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-        </div>
-                      </div>
-                  </div>
-              </div>
-		</section>
+    </section>
       </section
   ></section>
     <script src="assets/js/jquery.js"></script>

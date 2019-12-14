@@ -30,6 +30,10 @@ echo "<script>alert('Data deleted');</script>";
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <script type="text/javascript" src="datatables/jQuery-3.3.1/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="datatables/DataTables-1.10.18/js/jquery.dataTables.js"></script>
+    
+    
   </head>
 
   <body>
@@ -39,7 +43,7 @@ echo "<script>alert('Data deleted');</script>";
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
-            <a href="#" class="logo"><b>Admin Dashboard</b></a>
+            <a href="index.php" class="logo"><b>Dashboard</b></a>
             <div class="nav notify-row" id="top_menu">
                
                          
@@ -50,6 +54,19 @@ echo "<script>alert('Data deleted');</script>";
             	<ul class="nav pull-right top-menu">
                     <li><a class="logout" href="logout.php">Logout</a></li>
             	</ul>
+                <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="schedules.php">schedules</a></li>
+            	</ul>
+                <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="collections.php">collections</a></li>
+            	</ul>
+                <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="location.php">locations</a></li>
+            	</ul>
+                <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="subscriptions.php">subscription</a></li>
+            	</ul>
+                
             </div>
         </header>
       <aside>
@@ -59,21 +76,7 @@ echo "<script>alert('Data deleted');</script>";
               	  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
               	  <h5 class="centered"><?php echo $_SESSION['login'];?></h5>
               	  	
-                  <li class="mt">
-                      <a href="change-password.php">
-                          <i class="fa fa-file"></i>
-                          <span>Change Password</span>
-                      </a>
-                  </li>
-
-                  <li class="sub-menu">
-                      <a href="manage-users.php" >
-                          <i class="fa fa-users"></i>
-                          <span>Manage Users</span>
-                      </a>
-                   
-                  </li>
-              
+                
                  
               </ul>
           </div>
@@ -148,3 +151,8 @@ echo "<script>alert('Data deleted');</script>";
   </body>
 </html>
 <?php } ?>
+<script>  
+ $(document).ready(function(){  
+      $('#users_data').DataTable();  
+ });  
+ </script>
