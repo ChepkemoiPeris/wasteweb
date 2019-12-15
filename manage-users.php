@@ -54,15 +54,11 @@ echo "<script>alert('Data deleted');</script>";
             	<ul class="nav pull-right top-menu">
                     <li><a class="logout" href="logout.php">Logout</a></li>
             	</ul>
-                <ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="schedules.php">schedules</a></li>
-            	</ul>
+                
                 <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="collections.php">collections</a></li>
             	</ul>
-                <ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="location.php">locations</a></li>
-            	</ul>
+                
                 <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="subscriptions.php">subscription</a></li>
             	</ul>

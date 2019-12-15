@@ -27,15 +27,11 @@
                 <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="manage-users.php">manage users</a></li>
             	</ul>
-                <ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="schedules.php">schedules</a></li>
-            	</ul>
+                
                 <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="collections.php">collections</a></li>
             	</ul>
-                <ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="location.php">locations</a></li>
-            	</ul>
+               
                 <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="subscriptions.php">subscription</a></li>
             	</ul>

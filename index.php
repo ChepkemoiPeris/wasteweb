@@ -25,12 +25,20 @@ echo "<script>alert('Data deleted');</script>";
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Admin | Manage Users</title>
+    <title>Admin </title>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
   </head>
+  <style>
+body {
+  background-image: url('garbage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: 100% 100%;
+}
+</style>
 
   <body>
 
@@ -48,7 +56,7 @@ echo "<script>alert('Data deleted');</script>";
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="logout.php" onclick='return confirm('Are you sure you want to logout?')'>Logout</a></li>
+                    <li><a class="logout" href="logout.php" onclick='return confirm()'>Logout</a></li>
             	</ul>
             </div>
         </header>
@@ -73,13 +81,7 @@ echo "<script>alert('Data deleted');</script>";
                       </a>
                    
                   </li>
-                  <li class="sub-menu">
-                      <a href="schedule.php" >
-                          <i class="fa fa-calendar" aria-hidden="true"></i>
-                          <span>Schedules</span>
-                      </a>
-                   
-                  </li>
+                  
                   <li class="sub-menu">
                       <a href="collections.php" >
                           <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -87,13 +89,7 @@ echo "<script>alert('Data deleted');</script>";
                       </a>
                    
                   </li>
-                  <li class="sub-menu">
-                      <a href="location.php" >
-                          <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                          <span>Locations</span>
-                      </a>
-                   
-                  </li>
+                
                   <li class="sub-menu">
                       <a href="subscriptions.php" >
                           <i class="fa fa-money" aria-hidden="true"></i>
